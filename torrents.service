@@ -1,0 +1,11 @@
+[Unit]
+Description=Torrent service
+After=docker.service
+
+[Service]
+TimeoutStartSec=0
+ExecStartPre=-/usr/bin/docker kill rtorrent-rutorrent
+ExecStartPre=-/usr/bin/docker rm rtorrent-rutorrent
+ExecStartPre=/usr/bin/docker pull ririw/rtorrent-rutorrent:latest
+ExecStart=/usr/bin/docker run --name rtorrent-rutorrent -p 80:80 ririw/rtorrent-rutorrent:latest 
+ExecStop=/usr/bin/docker stop rtorrent-rutorrent

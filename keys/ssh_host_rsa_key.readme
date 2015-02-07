@@ -1,0 +1,3 @@
+To generate these files, go: 
+ssh-keygen -f keys/ssh_host_rsa_key -N '' -t rsa
+

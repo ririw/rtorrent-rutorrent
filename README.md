@@ -1,3 +1,14 @@
+My changes
+==========
+
+I've adapted this to work on a remote host and work with core OS.
+
+The changes are:
+
+ - Managed keys in the keys folder (see the readmes so you know how to add them)
+ - A core OS deployment script
+ - And I renamed the docker image :)
+
 Docker container with rTorrent and ruTorrent
 ============================================
 
